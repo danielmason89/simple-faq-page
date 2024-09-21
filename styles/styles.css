@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+p, h1, h2 {
+    overflow-wrap: break-word;
+}
+
+hr {
+    width: 60%; 
+    margin: auto;
+}
+
+
+h1 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-family: 400;
+  font-size: 1rem;
+  text-align: left;
+  padding-bottom: 1.25rem;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+header > p {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    padding: 2.5rem;
+    padding-left: 20rem;
+}
+
+ul, ol {
+    text-align: left;
+    padding-bottom: 1rem;
+}
