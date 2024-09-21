@@ -1,23 +1,26 @@
+/* Main CSS */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-* {
   margin: 0;
+  padding: 0;
 }
 
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    padding: 1rem;
 }
 
 p, h1, h2 {
     overflow-wrap: break-word;
+    margin-bottom: 1rem;
 }
 
 hr {
+    text-align: center;
+    padding: 2rem 0;
     width: 60%; 
     margin: auto;
 }
@@ -26,7 +29,6 @@ hr {
 h1 {
   font-weight: 600;
   font-size: 2.25rem;
-  padding-bottom: 0.5rem;
 }
 
 h2 {
@@ -40,7 +42,7 @@ p {
   font-family: 400;
   font-size: 1rem;
   text-align: left;
-  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 header {
@@ -55,11 +57,58 @@ header > p {
 
 section {
     text-align: center;
-    padding: 2.5rem;
+    padding: 2rem 1rem;
     padding-left: 20rem;
 }
 
 ul, ol {
     text-align: left;
-    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+
+/* Tablet Query */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    section {
+        padding: 1.5rem 1rem;
+        text-align: left;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+}
+
+/* Mobile Query */
+@media (max-width: 480px) {
+
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 1rem 0.5rem;
+    }
+    
 }
